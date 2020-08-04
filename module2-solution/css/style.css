@@ -17,7 +17,6 @@ body{
 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8,
 	.col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
 		float: left;
-		border: 10px solid red;
 	}
 	.col-lg-1{
 		width: 8.33%;
@@ -61,7 +60,6 @@ body{
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8,
 	.col-md-9, .col-md-10, .col-md-11, .col-md-12{
 		float: left;
-		border: 10px solid red;
 	}
 	.col-md-1{
 		width: 8.33%;
@@ -155,25 +153,33 @@ header h1{
 }
 .section{
 	background-color: gray;
-	padding: 10px;
+	margin: 10px;
+	border: 1px solid black;
+}
+.sectiontitle{
+	float: right;
+	text-align: center;
 	margin-bottom: 10px;
 }
-.section h2{
-	float: right;
-	padding: 10px;
-	padding-right: 20px;
-	padding-left: 20px;
-	margin-left: 5px;
-	margin-bottom: 5px;
+p{ clear: both;
+	margin: 10px;
 }
-
 .chicken{
 	background-color: tomato;
+	padding: 10px;
+	width: 150px;
+
 }
 .beef{
-	background-color: red;
-	color: white;
+	background-color: green;
+	padding: 10px;
+	width: 150px;
+
 }
 .sushi{
-	background-color:rgba(255,255,0,0.5);
+	background-color: yellow;
+	padding: 10px;
+	width: 150px;
+
 }
+
