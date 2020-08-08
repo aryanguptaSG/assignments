@@ -1,0 +1,103 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.main{
+	position: relative;
+	border: 1px solid black;
+	height: 400px;
+	overflow: hidden;
+	background-color: lightblue;
+}
+.triangle{
+	position: absolute;
+	top: 140px;
+	left: 30%;
+	width: 0px;
+	height: 0px;
+	border: 50px solid aqua;
+	border-bottom: 50px solid transparent;
+	border-top: 50px solid transparent;
+	border-right: 50px solid transparent;
+
+}
+.triangle::after{
+	content: '';
+	position: absolute;
+	top: -80px;
+	left: 350px;
+	width: 0px;
+	height: 0px;
+	border: 50px solid red;
+	border-bottom: 50px solid transparent;
+	border-top: 50px solid transparent;
+	border-right: 50px solid transparent;
+
+}
+.rod{
+	position: absolute;
+	top: 200px;
+	left: 30%;
+	width: 5px;
+	height: 100px;
+	background-color: aqua;
+}
+.rod::after{
+	content: '';
+	position: absolute;
+	left: 400px;
+	width: 5px;
+	height: 100px;
+	background-color: #fff;
+}
+
+.halfcircle{
+	position: absolute;
+	z-index:1;
+	top: 180px;
+	left: 30%;
+	height: 300px;
+	width: 400px;
+	border-radius: 50%;
+	background-color: green;
+	box-shadow: 2px 0px 10px 5px rgba(0,0,0,0.5);
+}
+.halfcircle::before{
+	content:'';
+	position: absolute;
+	top: 80px;
+	left: 200px;
+	height: 300px;
+	width: 400px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 2px 0px 10px 5px rgba(0,0,0,0.5);
+
+}
+.halfcircle::after{
+	content:'';
+	position: absolute;
+	top: 80px;
+	left: -180px;
+	height: 300px;
+	width: 400px;
+	border-radius: 50%;
+	background-color: rgba(0,100,50,1);
+	box-shadow: 2px 0px 10px 5px rgba(0,0,0,0.5);
+
+}
+
+@keyframes animate{
+	0%{
+		background-color: red;
+	}
+	100%{
+		background-color: green;
+	}
+}
+
+
+
+
+
