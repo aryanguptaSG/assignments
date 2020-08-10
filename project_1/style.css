@@ -1,0 +1,230 @@
+@font-face{
+	font-family:'RefreshmentStand';
+	src: url("refreshment-stand/Refreshment_Stand.ttf");
+}
+#header{
+	height: 120px;
+	width: 100%;
+	margin-bottom: 1px;
+	position: fixed;
+    background-color: rgba(224, 235, 232, 1);
+	border: 2px solid transparent;
+	top: 0;
+	left: 0;
+    z-index :100;
+}
+
+#boy{
+	text-align: center;
+}
+
+#navbar{
+	text-align: right;
+}
+
+#navbar>ul{
+	margin: 50px 50px 10px 20px;
+}
+
+#navbar>ul li{
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+}
+
+#navbar>ul li a{
+	text-decoration: none;
+	color: rgb(74, 177, 154);
+	font-size: 1.5em;
+
+}
+
+@media (max-width: 767px){
+	#navbar{
+	text-align: center;
+}
+#navbar>ul{
+	margin: 5px 5px 10px 5px;
+}
+#header{
+	height: 150px;
+}
+
+#navbar>ul li{
+	display: inline-block;
+	padding: 5px;
+	margin: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+}
+
+
+
+#main{
+	background-color: rgba(224, 235, 232, 1);
+	width: 100%;
+	height: 80vh;
+	position: relative;
+	top: 120px;
+}
+#main>h1{
+	color: rgb(74, 177, 154);
+	font-size: 4em;
+	font-family: RefreshmentStand;
+	text-align: center;
+	position: relative;
+	top: 100px;
+	z-index: 10;
+}
+#main>h2{
+	color: rgb(74, 177, 154);
+	font-size: 3em;
+	font-family: RefreshmentStand;
+	text-align: center;
+	position: relative;
+	top: 100px;
+	z-index: 10;
+}
+
+
+/*clouds*/
+#id_cloud{
+	position: absolute;
+	top: 30px;
+	height: 100px;
+	width: 300px;
+	overflow: hidden;
+	border-radius: 5%;
+	animation: cloud1move 40s infinite;
+
+}
+#id1_cloud{
+	position: absolute;
+	right: 0px;
+	top: 100px;
+	height: 100px;
+	width: 300px;
+	overflow: hidden;
+	border-radius: 5%;
+	animation: cloud2move 40s infinite;
+
+}
+.cloud{
+	position: absolute;
+	height: 300px;
+	width: 200px;
+	background-color: #fff;
+	border-radius: 50%;
+	left: 40px;
+}
+.cloud::after,.cloud::before{
+	content: '';
+	position: absolute;
+	height: 300px;
+	width: 200px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.cloud::after{
+	left: 90px;
+	top: 50px;
+}
+.cloud::before{
+	right: 70px;
+	top: 60px;
+}
+.eye{
+	position: absolute;
+	left: 40px;
+	top: 50px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border-top: 5px solid black;
+
+}
+.eye::before{
+	content: '';
+	position: absolute;
+	left: 50px;
+	top: 10px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border-top: 10px solid black;
+	transform: rotateZ(180deg);
+
+}
+.eye::after{
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: 100px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border-top: 5px solid black;
+}
+@keyframes cloud1move{
+	0%{
+		left: 0px;
+	}
+	50%{
+		left: 500px;
+
+	}
+	100%{
+		left: 0px;
+	}
+}
+@keyframes cloud2move{
+	0%{
+		right: 0px;
+	}
+	50%{
+		right: 500px;
+
+	}
+	100%{
+		right: 0px;
+	}
+}
+@media (max-width: 767px){
+	#id_cloud,#id1_cloud{
+		transform: scale(0.6);
+		z-index: 0;
+	}
+	#id_cloud{
+		animation: cloud1move 20s infinite;
+	}
+	#id1_cloud{
+		animation: cloud2move 20s infinite;
+	}
+	@keyframes cloud1move{
+	0%{
+		left: 0px;
+	}
+	50%{
+		left: 100px;
+
+	}
+	100%{
+		left: 0px;
+	}
+}
+@keyframes cloud2move{
+	0%{
+		right: 0px;
+	}
+	50%{
+		right: 100px;
+
+	}
+	100%{
+		right: 0px;
+	}
+}
+}
+
