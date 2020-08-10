@@ -15,3 +15,7 @@ document.getElementById("mountain").appendChild(tree);
 i+=1;
 
 }
+
+var house = document.querySelector(".house").cloneNode(true);
+house.id="id1_house"
+document.getElementById("mountain").appendChild(house);
