@@ -507,7 +507,7 @@
 	top: 50px;
 }
 #hello_content>h1{
-	color: rgb(74, 177, 154);
+	color: darkgreen;
 	font-size: 2em;
 	font-family: sans-serif;
 	font-weight: 500;
@@ -527,11 +527,12 @@
 	text-align: center;
 	font-size: 2em;
 	font-family: sans-serif;
-	font-weight: 500;
-	color: rgb(74, 177, 154);
+	font-weight: 600;
+	color: darkgreen;
+	word-spacing: 10px;
 
 }
-.hello_1_boy{
+#hello_1_boy{
 	position: relative;
 	top: 50px;
 	/*left: -25%;*/
@@ -546,6 +547,129 @@
 	font-weight: 500;
 	font-family: sans-serif;
 	color: rgb(74, 177, 154);
-
+	word-spacing: 10px;
+}
+.hello_1_content>p{
+	font-size: 1.3em;
+	font-weight: 200;
+	font-family: sans-serif;
+	margin: 20px;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+#hello_2_boy{
+	position: relative;
+	top: 150px;
+	float: right;
+}
+.hello_2_content{
+	position: relative;
+	top: 200px;
+	text-align: center;
+}
+.hello_2_content>h2{
+	font-size: 1.5em;
+	font-weight: 500;
+	font-family: sans-serif;
+	color: rgb(74, 177, 154);
+	word-spacing: 10px;
+}
+.hello_2_content>p{
+	font-size: 1.3em;
+	font-weight: 200;
+	font-family: sans-serif;
+	margin: 20px;
+}
+.help{
+	clear: both;
+	position: relative;
+	top: 500px;	
+	text-align: center;
+}
+.help>h1{
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: 400;
+	color: darkgreen;
+	word-spacing: 10px;
+	padding: 50px;
 
 }
+.help>h2{
+	font-size: 1.5em;
+	font-family: sans-serif;
+	font-weight: 400;
+	color: rgb(74, 177, 154);
+
+}
+.help>p{
+	font-size: 1.3em;
+	font-weight: 200;
+	font-family: sans-serif;
+	margin: 20px;
+}
+.help>button{
+	width: 30%;
+	margin: 20px;
+	margin-top: 40px;
+	color:darkgreen;
+	background-color: rgb(74, 177, 154);
+	padding: 15px; 
+	border-radius: 5px;
+}
+
+.message{
+	clear: both;
+	position: relative;
+	top: 500px;	
+	text-align: center;
+	display: none;
+}
+.form{
+	position: relative;
+	border: 1px solid black;
+	margin: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+	box-shadow: 0px 0px 5px 2px black;
+}
+.message>form>input{
+	margin: 10px;
+	width: 60%;
+	font-size: 1.5em;
+	margin-top: 20px;
+	border-radius: 10px;
+	padding: 3px;
+}
+
+
+@media (max-width: 700px){
+.help>button{
+	width: 100%;
+}
+.form{
+	margin: 20px;
+}
+.message>form>input{
+	width: 80%;
+}
+}
+
+.form>h2{
+	font-size: 1.5em;
+	font-family: sans-serif;
+	font-weight: 400;
+	color: rgb(74, 177, 154);
+	margin: 40px;
+}
+.submit_form{
+	width: 50%;
+	margin: 20px;
+	margin-top: 40px;
+	color:darkgreen;
+	background-color: rgb(74, 177, 154);
+	padding: 5px; 
+	border-radius: 5px;
+	font-size: 1.5em;
+}
+
