@@ -30,5 +30,16 @@ i+=1;
 var boy = document.querySelector("#boy").cloneNode(true);
 document.querySelector("#hello_boy").appendChild(boy);
 
+
+i=1;
+while(i<3){
 var boy = document.querySelector("#boy").cloneNode(true);
-document.querySelector(".hello_1_boy").appendChild(boy);
+document.querySelector("#hello_"+i+"_boy").appendChild(boy);
+i+=1;
+}
+
+
+function message(){
+	document.querySelector(".message_button").style.display="none";
+	document.querySelector(".message").style.display = "block";
+}
