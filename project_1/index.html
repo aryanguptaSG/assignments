@@ -117,14 +117,33 @@
 
 	<!-- form -->
 	<section class="message">
-		<form class="form">
+		<form class="form" onsubmit="validate()">
 			<h2>Contact Me</h2>
-			<input type="text" name="username" placeholder="Enter Your Name">
-			<input type="text" name="email" placeholder="Enter Email">
-			<input type="text" name="phone" placeholder="Enter Phone Number">
-			<button class="submit_form" type="submit">Submit</button>
+			<input id="username" type="text" name="username" placeholder="Enter Your Name">
+			<input id="email" type="email" name="email" placeholder="Enter Email">
+			<input id="number" type="Number" name="phone" placeholder="Enter Phone Number">
+			<input id="date" type="date" name="date" placeholder="date of meeting">
+			<select>
+				<option>Select Time Slot</option>
+				<option>4pm-5pm</option>
+				<option>6pm-7pm</option>
+			</select>
+			<button class="submit_form" type="Submit">Submit</button>
 		</form>
 	</section>
+
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+    	<h3><a href="#">Git hub</a></h3>
+    	<h3><a href="#">Twitter</a></h3>
+    	<h3><a href="#">Hire me</a></h3>
+    	<p>&copy; Made By Aryan Gupta ,2020.All rights reserved</p>
+    </footer>
+
 
 
 
