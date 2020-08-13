@@ -43,3 +43,19 @@ function message(){
 	document.querySelector(".message_button").style.display="none";
 	document.querySelector(".message").style.display = "block";
 }
+
+function validate(){
+	var name = document.getElementById("username").value;
+	var email = document.getElementById("email").value;
+	var number = document.getElementById("number").value;
+	var date = document.getElementById("date").value;
+
+	document.write(name+"<br>");
+	document.write(email+"<br>");
+	document.write(number+"<br>");
+	document.write(date+"<br>");
+	document.write("submited");
+
+	console.log("submited");
+
+}
