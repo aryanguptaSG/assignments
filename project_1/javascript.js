@@ -49,13 +49,41 @@ function validate(){
 	var email = document.getElementById("email").value;
 	var number = document.getElementById("number").value;
 	var date = document.getElementById("date").value;
-
-	document.write(name+"<br>");
-	document.write(email+"<br>");
-	document.write(number+"<br>");
-	document.write(date+"<br>");
-	document.write("submited");
-
-	console.log("submited");
+	var time = document.getElementById("time").value;
+	document.querySelector(".message").style.display = "none";
+	document.getElementById("response").style.display="block";
+	var data ={
+		username: name,
+		mail:email,
+		phone:number,
+		Date: date,
+		Time:time,
+	}
+	document.querySelector("#response>h1").innerHTML="Hello "+data.username+"<br>we will contact you soon by your email : "+data.mail;
+	document.querySelector("#response>h2").innerHTML="Date : "+data.Date+"<br>Time : "+data.Time;
+	console.log(data);
+	var jsondata= JSON.stringify(data);
+	console.log(jsondata);
 
 }
+
+
+
+var lastScrollTop = 200;
+var navbar = document.getElementById("header");
+window.addEventListener("scroll",function(){
+	var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	console.log(scrollTop);
+	if(scrollTop>1800){
+		navbar.style.top="-200px";
+	}
+	else if(scrollTop>lastScrollTop){
+		navbar.style.top="-200px";
+	}
+	else{
+		navbar.style.top="0px";
+	}
+	if(scrollTop>200){
+	lastScrollTop =scrollTop;
+	}
+})
