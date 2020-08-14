@@ -73,7 +73,6 @@ var lastScrollTop = 200;
 var navbar = document.getElementById("header");
 window.addEventListener("scroll",function(){
 	var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-	console.log(scrollTop);
 	if(scrollTop>1800){
 		navbar.style.top="-200px";
 	}
