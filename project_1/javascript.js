@@ -86,3 +86,42 @@ window.addEventListener("scroll",function(){
 	lastScrollTop =scrollTop;
 	}
 })
+
+
+function treverse(element){
+	var n = element.childElementCount;
+for (var i=0;i<n;i++){
+	if (i==0){
+		console.log(element.firstElementChild);
+		var x= element.firstElementChild;
+		treverse(x);
+	}
+	else{
+		console.log(x.nextElementSibling);
+		x=x.nextElementSibling;
+		treverse(x);
+	}
+
+
+}
+}
+treverse(document);
+
+// function treverse(document){
+// var n = document.childElementCount;
+// for (var i=0;i<n;i++){
+// 	if (i==0){
+// 		console.log(document.firstElementChild);
+// 		t(document.firstElementChild);
+// 		var x= document.firstElementChild;
+// 	}
+// 	else{
+// 		console.log(x.nextElementSibling);
+// 		t(x.nextElementSibling);
+// 		x=x.nextElementSibling;
+// 	}
+
+
+// }
+// }
+
