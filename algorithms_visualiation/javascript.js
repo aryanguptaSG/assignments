@@ -53,7 +53,7 @@ function bubbleshort(){
     // console.log(hight);
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
-            if(hight[i]>hight[j]){
+            if(hight[i]<hight[j]){
              var temp = hight[i];
              hight[i]=hight[j];
              hight[j]=temp;
