@@ -1,5 +1,5 @@
 var i=1;
-while(i<=20){
+while(i<=15){
 var tree = document.getElementById("element_0").cloneNode(true);
 tree.id="element_"+i;
 tree.style.height= String(Math.floor(Math.random()*500+100))+"px";
@@ -56,7 +56,9 @@ async function bubbleshort(){
     // console.log(hight);
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
-            // document.getElementById("element_"+j).style.backgroundColor="lightblue";
+            document.getElementById("element_"+i).style.backgroundColor="blue";
+            document.getElementById("element_"+j).style.backgroundColor="blue";
+            await sleep(300);
             if(hight[i]<hight[j]){
                 document.getElementById("element_"+i).style.backgroundColor="yellow";
                 document.getElementById("element_"+j).style.backgroundColor="red";
@@ -70,10 +72,12 @@ async function bubbleshort(){
              document.getElementById("element_"+j).style.height=hight[j]+"px";
              document.getElementById("element_"+j).style.backgroundColor="yellow";
 
-             await sleep(500);
+             await sleep(300);
 
             }
+            // document.getElementById("element_"+i).style.backgroundColor="lightblue";
             document.getElementById("element_"+j).style.backgroundColor="lightgreen";
+            await sleep(250);
         }
     }
     for(i=0;i<n;i++){
