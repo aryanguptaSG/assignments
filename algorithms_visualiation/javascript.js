@@ -1,5 +1,5 @@
 var i=1;
-while(i<=250){
+while(i<=20){
 var tree = document.getElementById("element_0").cloneNode(true);
 tree.id="element_"+i;
 tree.style.height= String(Math.floor(Math.random()*500+100))+"px";
@@ -43,26 +43,42 @@ return hight;
 //         currentDate = Date.now();
 //     }while(currentDate-date < delay);
 // }
+function sleep(delay){
+    return new Promise(resolve=>setTimeout(resolve,delay));
+}
 
 
 
 var hight=treverse(document.getElementById("box"));
 
-function bubbleshort(){
+async function bubbleshort(){
     var i,j;
     // console.log(hight);
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
+            // document.getElementById("element_"+j).style.backgroundColor="lightblue";
             if(hight[i]<hight[j]){
+                document.getElementById("element_"+i).style.backgroundColor="yellow";
+                document.getElementById("element_"+j).style.backgroundColor="red";
+                await sleep(500);
              var temp = hight[i];
              hight[i]=hight[j];
              hight[j]=temp;
              document.getElementById("element_"+i).style.height=hight[i]+"px";
-            
+             document.getElementById("element_"+i).style.backgroundColor="red";
+
              document.getElementById("element_"+j).style.height=hight[j]+"px";
+             document.getElementById("element_"+j).style.backgroundColor="yellow";
+
+             await sleep(500);
 
             }
+            document.getElementById("element_"+j).style.backgroundColor="lightgreen";
         }
+    }
+    for(i=0;i<n;i++){
+        await sleep(3);
+        document.getElementById("element_"+i).style.backgroundColor="red";
     }
     console.log(hight);
 }
