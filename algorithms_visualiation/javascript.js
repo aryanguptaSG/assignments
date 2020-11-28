@@ -58,11 +58,11 @@ async function bubbleshort(){
         for(j=0;j<n;j++){
             document.getElementById("element_"+i).style.backgroundColor="blue";
             document.getElementById("element_"+j).style.backgroundColor="blue";
-            // await sleep(0.02);
+            await sleep(0.02);
             if(hight[i]<hight[j]){
                 document.getElementById("element_"+i).style.backgroundColor="yellow";
                 document.getElementById("element_"+j).style.backgroundColor="red";
-                // await sleep(0.02);
+                await sleep(0.02);
              var temp = hight[i];
              hight[i]=hight[j];
              hight[j]=temp;
@@ -72,12 +72,12 @@ async function bubbleshort(){
              document.getElementById("element_"+j).style.height=hight[j]+"px";
              document.getElementById("element_"+j).style.backgroundColor="yellow";
 
-            //  await sleep(120);
+             await sleep(3);
 
             }
-            // document.getElementById("element_"+i).style.backgroundColor="lightblue";
+            document.getElementById("element_"+i).style.backgroundColor="lightblue";
             document.getElementById("element_"+j).style.backgroundColor="lightgreen";
-            // await sleep(120);
+            await sleep(3);
         }
     }
     for(i=0;i<n;i++){
