@@ -7,10 +7,11 @@
 
 body>ul li{
     margin: 0.3px;
-    width: 23px;
+    width: 1.5px;
+    margin: 0.5px;
     background-color:lightgreen;
     display: inline-block;
-    transition: 0.2s;
+    /* transition: 0.1s; */
 }
 #element_0{
     height: 200px;
