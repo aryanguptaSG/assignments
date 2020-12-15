@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#first_heading{
+    text-align: center;
+    margin: 10px;
+    background-color:red;
+    color: white;
+}
+#second_heading{
+    text-align: center;
+}
+
+@media(min-width:700px) and (max-width:999px){
+#third_heading{
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    top: -200px;
+    left: 50px; 
+    font-size: 30px;
+}
+#logo{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+}
+
+
+@media(min-width:400px) and (max-width:699px){
+    #third_heading{
+        margin: 20px;
+        position: relative;
+        text-align: center;
+        top: -150px;
+        left: 70px; 
+        font-size: 20px;
+    }
+    #logo{
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        padding: 10px;
+    }
+    }
+
+@media (min-width: 1000px){
+    #third_heading{
+        margin: 10px;
+        position: relative;
+        text-align: center;
+        top: -200px;
+        left: 50px; 
+        font-size: 50px;
+    }
+    #logo{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        padding: 10px;
+    }
+    }
+
+    @media (max-width: 399px){
+        #third_heading{
+            margin: 10px;
+            /* position: relative; */
+            text-align: center;
+            /* top: -200px;
+            left: 50px;  */
+            font-size: 25px;
+        }
+        #logo{
+            display: none;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+        }
+        }
+
+.form{
+    margin: 20px;
+}
+label{
+    margin: 10px;
+    font-size: 20px;
+}
+input,select{
+    margin: 10px;
+    font-size: 20px;
+    width: 90%;
+    padding: 10px;
+}
+.ids{
+    width: 35%;
+}
+
+@media(max-width: 899px){
+    label{
+        margin: 10px;
+        font-size: 20px;
+    }
+    input{
+        margin: 10px;
+        font-size: 20px;
+        width: 90%;
+    }
+    .ids{
+        width: 90%;
+       
+    }
+
+}
+
+button{
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: gray;
+    text-align: center;
+    color:white;
+    margin-top: 10px;
+    padding: 20px;
+}
