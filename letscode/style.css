@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(33, 29, 29);
+}
+.intro{
+    text-align: center;
+}
+#logoimg{
+    position: relative;
+    top: 200px;
+   animation: logo 5s;
+   transform: scale(0.5);
+   transition: 5s;
+}
+
+@keyframes logo{
+    0%{
+        top: 500px;
+    }
+    100%{
+        top: 200px;
+    }
+}
