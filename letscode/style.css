@@ -4,24 +4,59 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(33, 29, 29);
-}
-.intro{
-    text-align: center;
-}
-#logoimg{
+    background-color: rgb(55, 52, 52);
     position: relative;
-    top: 200px;
-   animation: logo 5s;
+    
+}
+#logodesign{
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    width: 200px;
+    height: 200px;
+    border: white 4px solid;
+    transform: rotateZ(45deg);
+    animation: intro 5s;
+}
+#logodesign::after{
+    content: '';
+    top: -13px;
+    left: -13px;
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border: #fff 4px solid;
+}
+#logodesign::before{
+    content: '';
+    top: -25px;
+    left: -25px;
+    position: absolute;
+    width: 194px;
+    height: 194px;
+    border: #fff 4px solid;
+}
+@media (min-width:800px) and (max-width:1000px){
+    #logodesign{
+        transform: scale(0.8) rotateZ(45deg);
+        left: 120px;
+    }
+}
+@media (min-width:650px) and (max-width:799px){
+    #logodesign{
+        transform: scale(0.6) rotateZ(45deg);
+        left: 80px;
+    }
+}
+@media (min-width:400px) and (max-width:649px){
+    #logodesign{
+        transform: scale(0.4) rotateZ(45deg);
+        left: 20px;
+    }
 }
 
-@keyframes logo{
+@keyframes intro{
     0%{
-        top: 500px;
-    }
-    100%{
-        top: 200px;
-        transform: scale(0.5);
-   /* transition: 5s; */
+        top: 700px;
     }
 }
