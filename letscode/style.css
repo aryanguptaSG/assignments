@@ -13,8 +13,6 @@ body{
     position: relative;
     top: 200px;
    animation: logo 5s;
-   transform: scale(0.5);
-   transition: 5s;
 }
 
 @keyframes logo{
@@ -23,5 +21,7 @@ body{
     }
     100%{
         top: 200px;
+        transform: scale(0.5);
+   /* transition: 5s; */
     }
 }
