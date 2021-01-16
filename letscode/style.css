@@ -54,6 +54,13 @@ body{
         left: 20px;
     }
 }
+@media (max-width:399px){
+    #logodesign{
+        transform: scale(0.3) rotateZ(45deg);
+        left: -20px;
+    }
+}
+
 
 @keyframes intro{
     0%{
