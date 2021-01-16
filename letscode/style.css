@@ -11,11 +11,18 @@ body{
 #logodesign{
     position: absolute;
     left: 300px;
-    top: 300px;
+    top: 50vh;
     width: 200px;
     height: 200px;
     border: white 4px solid;
     transform: rotateZ(45deg);
+    color: blueviolet;
+    font-weight: 900;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 6em;
+    font-family: cursive;
+    text-shadow:5px 5px 10px blueviolet;
     animation: intro 5s;
 }
 #logodesign::after{
@@ -36,10 +43,33 @@ body{
     height: 194px;
     border: #fff 4px solid;
 }
+
+#logotext{
+    position: absolute;
+    left: 600px;
+    top: 50vh;
+    font-size: 10em;
+    font-weight: 1500;
+    font-family: fantasy;
+    color: cyan;
+    line-height: 50%;
+}
+#logotext span{
+    color: blueviolet;
+}
+
+
+
+
+
 @media (min-width:800px) and (max-width:1000px){
     #logodesign{
         transform: scale(0.8) rotateZ(45deg);
         left: 120px;
+    }
+    #logotext{
+        transform: scale(0.8);
+        left: 370px;
     }
 }
 @media (min-width:650px) and (max-width:799px){
@@ -47,17 +77,29 @@ body{
         transform: scale(0.6) rotateZ(45deg);
         left: 80px;
     }
+    #logotext{
+        transform: scale(0.7);
+        left: 250px;
+    }
 }
 @media (min-width:400px) and (max-width:649px){
     #logodesign{
-        transform: scale(0.4) rotateZ(45deg);
-        left: 20px;
+        transform: scale(0.5) rotateZ(45deg);
+        left: 5px;
+    }
+    #logotext{
+        transform: scale(0.5);
+        left: 80px;
     }
 }
 @media (max-width:399px){
     #logodesign{
-        transform: scale(0.3) rotateZ(45deg);
+        transform: scale(0.4) rotateZ(45deg);
         left: -20px;
+    }
+    #logotext{
+        transform: scale(0.4);
+        left: 50px;
     }
 }
 
