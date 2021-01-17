@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(55, 52, 52);
-    position: relative;
+    background-color: #000;
     
 }
 #logodesign{
     position: absolute;
     left: 300px;
-    top: 35vh;
+    top: 300px;
     width: 200px;
     height: 200px;
     border: white 4px solid;
@@ -23,7 +22,7 @@ body{
     font-size: 6em;
     font-family: cursive;
     text-shadow:5px 5px 10px blueviolet;
-    animation: intro 5s;
+    /* animation: intro 5s; */
 }
 #logodesign::after{
     content: '';
@@ -47,7 +46,7 @@ body{
 #logotext{
     position: absolute;
     left: 600px;
-    top: 35vh;
+    top: 300px;
     font-size: 10em;
     font-weight: 1500;
     font-family: fantasy;
@@ -105,8 +104,69 @@ body{
 }
 
 
-@keyframes intro{
+/* @keyframes intro{
     0%{
         top: 700px;
     }
+} */
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0px;
+}
+
+.bubbleimg{
+    width: 50px;
+    animation: bubbleanimate 7s linear infinite;
+    opacity: 0;
+}
+.bubbleimg:nth-child(1){
+    animation-delay: 2s;
+    width: 90px;
+}
+.bubbleimg:nth-child(2){
+    animation-delay: 4s;
+    width: 120px;
+
+}
+.bubbleimg:nth-child(3){
+    animation-delay: 6s;
+    width: 65px;
+}
+.bubbleimg:nth-child(4){
+    animation-delay: 3s;
+    width: 100px;
+}
+.bubbleimg:nth-child(5){
+    animation-delay: 1s;
+    width: 80px;
+}
+.bubbleimg:nth-child(6){
+    animation-delay: 0s;
+    width: 55px;
+}
+.bubbleimg:nth-child(7){
+    animation-delay: 5s;
+    width: 75px;
+}
+
+@keyframes bubbleanimate{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
 }
