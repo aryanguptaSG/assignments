@@ -5,12 +5,13 @@
 }
 body{
     background-color: #000;
+    color: #fff;
     
 }
 #logodesign{
     position: absolute;
     left: 300px;
-    top: 300px;
+    top: 200px;
     width: 200px;
     height: 200px;
     border: white 4px solid;
@@ -22,7 +23,7 @@ body{
     font-size: 6em;
     font-family: cursive;
     text-shadow:5px 5px 10px blueviolet;
-    /* animation: intro 5s; */
+    animation: intro 5s;
 }
 #logodesign::after{
     content: '';
@@ -46,12 +47,13 @@ body{
 #logotext{
     position: absolute;
     left: 600px;
-    top: 300px;
+    top: 200px;
     font-size: 10em;
     font-weight: 1500;
-    font-family: fantasy;
+    font-family: cursive;
     color: cyan;
     line-height: 50%;
+    animation: intro 8s;
 }
 #logotext span{
     color: blueviolet;
@@ -85,11 +87,11 @@ body{
 @media (min-width:400px) and (max-width:649px){
     #logodesign{
         transform: scale(0.5) rotateZ(45deg);
-        left: 5px;
+        left: 10px;
     }
     #logotext{
         transform: scale(0.5);
-        left: 80px;
+        left: 170px;
     }
 }
 @media (max-width:399px){
@@ -99,17 +101,17 @@ body{
     }
     #logotext{
         transform: scale(0.4);
-        left: 50px;
+        left: 90px;
     }
 }
 
 
-/* @keyframes intro{
+@keyframes intro{
     0%{
-        top: 700px;
+        opacity: 0;
     }
-} */
-.bubble{
+}
+/* .bubble{
     width: 100%;
 }
 
@@ -172,5 +174,83 @@ body{
         transform: translateY(-80vh);
         opacity: 0;
     }
+
+} */
+
+#about{
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 80vh;
+    font-size: 2em;
+    font-family: cursive;
+}
+
+@keyframes about{
+    0%{
+        width: 0%;
+    }
+}
+#sidebar i{
+    font-size: 2em;
+    padding: 3px;
+    border-radius: 50%;
+    box-shadow: #fff 0px 0px 10px;
+    cursor: pointer;
+}
+.lable{
+    display: none;
+    position: absolute;
+    right: 40px;
+}
+#sidebar i:hover{
+    transform: scale(1.2);
+}
+@media (min-width:550px){
+#sidebar{
+    float: right;
+    position: relative;
+    width: 100px;
+    height: 100vh;
+    background-color: #000;
+    /* border-left: #fff 2px solid; */
+    text-align: center;
+}
+.lable{
+    top: 30px;
+}
+#sidebar li{
+   display: block;
+   align-items: center;
+   line-height: 600%;
+   position: relative;
+}
+
+}
+@media (max-width:549px){
+    #sidebar{
+        width: 100%;
+        height: 100px;
+        background-color: #000;
+        /* border-bottom: #fff 2px solid; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .lable{
+        top: 40px;
+    }
+    #sidebar ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #sidebar li{
+        display: inline;
+        position: relative;
+     }
 
 }
