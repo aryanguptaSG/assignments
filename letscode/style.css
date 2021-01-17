@@ -203,7 +203,7 @@ body{
 .lable{
     display: none;
     position: absolute;
-    right: 40px;
+    right: 10px;
 }
 #sidebar i:hover{
     transform: scale(1.2);
