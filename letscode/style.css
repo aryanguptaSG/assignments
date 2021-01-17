@@ -11,7 +11,7 @@ body{
 #logodesign{
     position: absolute;
     left: 300px;
-    top: 200px;
+    top: 150px;
     width: 200px;
     height: 200px;
     border: white 4px solid;
@@ -47,7 +47,7 @@ body{
 #logotext{
     position: absolute;
     left: 600px;
-    top: 200px;
+    top: 150px;
     font-size: 10em;
     font-weight: 1500;
     font-family: cursive;
@@ -183,7 +183,7 @@ body{
     padding-right: 20%;
     padding-bottom: 20px;
     position: absolute;
-    top: 80vh;
+    top: 60vh;
     font-size: 2em;
     font-family: cursive;
 }
