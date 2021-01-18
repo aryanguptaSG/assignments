@@ -8,10 +8,14 @@ body{
     color: #fff;
     
 }
+header{
+    position: relative;
+    width: 100%;
+}
 #logodesign{
     position: absolute;
     left: 300px;
-    top: 150px;
+    top: 200px;
     width: 200px;
     height: 200px;
     border: white 4px solid;
@@ -43,11 +47,17 @@ body{
     height: 194px;
     border: #fff 4px solid;
 }
-
+#logodesign div{
+    transform: rotateZ(-45deg);
+    animation: intro 8s;
+    padding-left: 40px;
+    padding-bottom: 90px;
+    
+}
 #logotext{
     position: absolute;
+    top: 200px;
     left: 600px;
-    top: 150px;
     font-size: 10em;
     font-weight: 1500;
     font-family: cursive;
@@ -58,13 +68,13 @@ body{
 #logotext span{
     color: blueviolet;
     text-shadow: 6px 6px 15px blueviolet;
-}
+} 
 
 
 
 
 
-@media (min-width:800px) and (max-width:1000px){
+@media(min-width:800px) and (max-width:1000px){
     #logodesign{
         transform: scale(0.8) rotateZ(45deg);
         left: 120px;
@@ -87,11 +97,11 @@ body{
 @media (min-width:400px) and (max-width:649px){
     #logodesign{
         transform: scale(0.5) rotateZ(45deg);
-        left: 10px;
+        left: 20px;
     }
     #logotext{
         transform: scale(0.5);
-        left: 170px;
+        left: 35%;
     }
 }
 @media (max-width:399px){
@@ -111,7 +121,7 @@ body{
         opacity: 0;
     }
 }
-/* .bubble{
+/* /* .bubble{
     width: 100%;
 }
 
@@ -157,9 +167,9 @@ body{
     animation-delay: 5s;
     width: 75px;
     left: 30%;
-}
+} */
 
-@keyframes bubbleanimate{
+/* @keyframes bubbleanimate{
     0%{
         transform: translateY(0);
         opacity: 0;
@@ -175,24 +185,10 @@ body{
         opacity: 0;
     }
 
-} */
+}  */
 
-#about{
-    width: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 20px;
-    position: absolute;
-    top: 60vh;
-    font-size: 2em;
-    font-family: cursive;
-}
 
-@keyframes about{
-    0%{
-        width: 0%;
-    }
-}
+
 #sidebar i{
     font-size: 2em;
     padding: 3px;
@@ -207,15 +203,14 @@ body{
 }
 #sidebar i:hover{
     transform: scale(1.2);
-}
+} 
 @media (min-width:550px){
 #sidebar{
     float: right;
     position: relative;
     width: 100px;
-    height: 100vh;
-    background-color: #000;
-    /* border-left: #fff 2px solid; */
+    height: 50vh;
+    background: transparent;
     text-align: center;
 }
 .lable{
@@ -227,14 +222,23 @@ body{
    line-height: 600%;
    position: relative;
 }
+#about{
+    text-align: justify;
+    padding-top: 500px;
+    padding-right: 15%;
+    padding-left: 15%;
+    font-size: 1.5em;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
 
 }
 @media (max-width:549px){
     #sidebar{
+        position: relative;
         width: 100%;
         height: 100px;
-        background-color: #000;
-        /* border-bottom: #fff 2px solid; */
+        background: transparent;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -252,5 +256,65 @@ body{
         display: inline;
         position: relative;
      }
+     #about{
+         text-align: justify;
+        padding-top: 350px;
+        padding-right: 15%;
+        padding-left: 15%;
+        font-size: 1.5em;
+        font-family: cursive;
+        margin-bottom: 20px;
+    }
 
 }
+
+#footer{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-right: 15%;
+    padding-left: 15%;
+    width: 100%;
+}
+@media(min-width:866px){
+.footer1{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: cursive;
+}
+}
+@media (max-width:865px){
+.footer1{
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: cursive;
+    margin: 20px
+}
+}
+.footer1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer1 ul li{
+    display: inline;
+}
+.footer1 i{
+    padding: 5px;
+    font-size: 1.2em;
+    padding: 3px;
+    border-radius: 50%;
+    box-shadow: #fff 0px 0px 10px;
+    cursor: pointer;
+}
+.footer1 i:hover{
+    transform: scale(1.2);
+}
+.footer1 span{
+    font-size: 1.3em;
+    color: blueviolet;
+    text-shadow: 6px 6px 15px blueviolet;
+} 
+
