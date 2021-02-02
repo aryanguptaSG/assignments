@@ -200,6 +200,7 @@ header{
     display: none;
     position: absolute;
     right: 10px;
+    font-family: cursive;
 }
 #sidebar i:hover{
     transform: scale(1.2);
