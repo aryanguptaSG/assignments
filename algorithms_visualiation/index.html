@@ -2,18 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Algorithms</title>
 </head>
 <body>
-   <ul id="box">
-       <li id="element_0" ></li>
-    </ul>
+    <header>Algorithms Visulation</header>
 
-    <button onclick="bubbleshort()">Bubble Short</button>
-    <button onclick="activatequickshort()">Quick Short</button>
+    <div class="controles">
+        <button onclick="Bubblesort()" id="bubble">Buble Sort</button>
+        <button>Selection Sort</button>
+        <button>Insertion Sort</button>
+        <button>Quick Sort</button>
+        <button>Merg Sort</button>
+        <button><a href="/">Reset Bars</a></button>
+        
+        
+    </div>
+
+    <div class="container" id="container">
+        <div class="visual" id="visual">
+            <div id="bar0"></div>
+        </div>
+    </div>
+    
 </body>
-
-<script type="text/javascript" src="javascript.js"></script>
+<script src="javascript.js"></script>
 </html>
