@@ -35,7 +35,6 @@ async function Bubblesort(){
     deactivate(1);
     var array = document.getElementById("visual")
     var n= array.childElementCount
-    console.log(n+" Numbers of element")
     for(var i=0;i<n;i++){
         var h1=document.getElementById("bar"+i).offsetHeight;
         for(var j=0;j<n;j++){
@@ -63,9 +62,7 @@ async function Bubblesort(){
 async function selectionSort()  
 { deactivate(1);
     var array = document.getElementById("visual")
-    var n= array.childElementCount
-    console.log(n+" Numbers of element")  
-  
+    var n= array.childElementCount  
     // One by one move boundary of unsorted subarray  
     for (var i = 0; i<n-1; i++)  
     {  
@@ -77,7 +74,6 @@ async function selectionSort()
             document.getElementById("bar"+i).style.backgroundColor="red";
             document.getElementById("bar"+j).style.backgroundColor="green";
             var h2=document.getElementById("bar"+j).offsetHeight;
-            console.log(h1,h2);
             await sleep(50);
             if (h2 < min_h ) { 
                 min_idx = j;
@@ -96,4 +92,33 @@ async function selectionSort()
     
     recolour(n);
     deactivate(0);
-} 
+}
+
+
+async function insertion_Sort(){
+    deactivate(1);
+    //getting numver of bars
+    var array = document.getElementById("visual")
+    var n= array.childElementCount
+
+    //sorting logic
+    for (let i = 1; i < n; i++) {
+        let j = i - 1
+        let temp = document.getElementById("bar"+i).offsetHeight;
+        document.getElementById("bar"+i).style.backgroundColor="red";
+        while (j >= 0 && document.getElementById("bar"+j).offsetHeight > temp) {
+            document.getElementById("bar"+j).style.backgroundColor="green";
+            await sleep(50);
+            document.getElementById("bar"+String(j+1)).style.height = document.getElementById("bar"+j).offsetHeight+"px";
+            document.getElementById("bar"+j).style.backgroundColor="rebeccapurple";
+          j--
+        }
+        document.getElementById("bar"+String(j+1)).style.height = temp+"px"
+
+        document.getElementById("bar"+i).style.backgroundColor="rebeccapurple";
+        document.getElementById("bar"+String(j+1)).style.backgroundColor="rebeccapurple";
+      }
+
+      recolour(n);
+    deactivate(0);
+}
