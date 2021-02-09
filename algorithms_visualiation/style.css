@@ -29,6 +29,7 @@ header{
     cursor: pointer;
 }
 .container{
+    transform: rotateX(180deg);
     display: flex;
     align-items: center;
     justify-content: center;
