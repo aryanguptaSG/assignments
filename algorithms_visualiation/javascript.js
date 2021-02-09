@@ -22,10 +22,12 @@ async function recolour(n){
 }
 function deactivate(n){
     if(n==1){
-    document.getElementById("controles").style.opacity="0";
+    document.getElementById("controles").style.opacity= "0";
+    document.getElementById("controles").style.visibility= "hidden";
 }
 else{
-        document.getElementById("controles").style.opacity="1";
+    document.getElementById("controles").style.visibility= "visible";
+    document.getElementById("controles").style.opacity= "1";
 }
 }
 
