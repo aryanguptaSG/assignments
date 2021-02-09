@@ -1,11 +1,11 @@
 function creatbar(){
  var height = document.getElementById("visual").offsetHeight;
- document.getElementById("bar0").style.height=height+"px";
+ document.getElementById("bar0").style.height=height-20+"px";
  var w = document.getElementById("visual").offsetWidth;
  for(var i=1;i<w/10;i++){
      var bar= document.getElementById("bar0").cloneNode(true);
      bar.id = "bar"+i;
-     bar.style.height = String(Math.floor(Math.random()*height-10))+"px";
+     bar.style.height = String(Math.floor(Math.random()*(height-20)))+"px";
      document.getElementById("visual").appendChild(bar)
  }     
 }
